@@ -118,8 +118,8 @@ Build an image:
 
 Run the container (dev environment):
 
-`docker run -it lda2vec`
+`docker run -it lda2vec bash`
 
 Run the container with GPU support:
 
-`nvidia-docker run -it lda2vec`
+`nvidia-docker run -it lda2vec bash`
