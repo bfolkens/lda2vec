@@ -20,7 +20,7 @@ lda2vec: Tools for interpreting natural language
 
 
 The lda2vec model tries to mix the best parts of word2vec and LDA
-into a single framework. word2vec captures powerful relationships 
+into a single framework. word2vec captures powerful relationships
 between words, but the resulting vectors are largely uninterpretable
 and don't represent documents. LDA on the other hand is quite
 interpretable by humans, but doesn't model local word relationships
@@ -34,7 +34,7 @@ your own custom topic models. However, it's still research software.
 I wouldn't run this in production, Windows, and I'd only use it after you've
 decided both word2vec and LDA are inadequate and you'd like to tinker with your
 own cool models :) That said, I don't want to discourage experimentation:
-there's some limited documentation, a modicum of unit tests, and some 
+there's some limited documentation, a modicum of unit tests, and some
 interactive examples to get you started.
 
 
@@ -107,3 +107,19 @@ Requirements for some features:
 
 - CUDA support
 - Testing utilities: py.test
+
+
+Docker
+------
+
+Build an image:
+
+`docker build -t lda2vec .`
+
+Run the container (dev environment):
+
+`docker run -it lda2vec`
+
+Run the container with GPU support:
+
+`nvidia-docker run -it lda2vec`
