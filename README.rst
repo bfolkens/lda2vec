@@ -112,17 +112,14 @@ Requirements for some features:
 Docker
 ------
 
-Build an image:
+Build an image::
 
-::
   docker build -t lda2vec .
 
-Run the container (dev environment):
+Run the container (dev environment)::
 
-::
   docker run -it lda2vec bash
 
-Run the container with GPU support:
+Run the container with GPU support::
 
-::
   nvidia-docker run -it lda2vec bash
